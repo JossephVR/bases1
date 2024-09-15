@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0C46E06-83C7-4CF4-ADF4-18B86DA58791}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoDatos\Conexion.cs" />
+    <Compile Include="controladoresConsultas\controladorAgregarPedido.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta1.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta10.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta2.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta3.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta4.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta5.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta6.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta7.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta8.cs" />
+    <Compile Include="controladoresConsultas\controladorConsulta9.cs" />
+    <Compile Include="controlador\ControladorArticuloSuper.cs" />
+    <Compile Include="controlador\controladorCaja.cs" />
+    <Compile Include="controlador\controladorCajero.cs" />
+    <Compile Include="controlador\controladorDepartamento.cs" />
+    <Compile Include="controlador\controladorEstanteria.cs" />
+    <Compile Include="controlador\controladorFactura.cs" />
+    <Compile Include="controlador\controladorGerente.cs" />
+    <Compile Include="controlador\controladorInventario.cs" />
+    <Compile Include="controlador\controladorMarca.cs" />
+    <Compile Include="controlador\controladorPasillo.cs" />
+    <Compile Include="controlador\controladorPedido.cs" />
+    <Compile Include="controlador\controladorProveedor.cs" />
+    <Compile Include="controlador\ControladorSucursal.cs" />
+    <Compile Include="entidadesConsulta\agregarPedido.cs" />
+    <Compile Include="entidadesConsulta\consulta1.cs" />
+    <Compile Include="entidadesConsulta\consulta10.cs" />
+    <Compile Include="entidadesConsulta\consulta2.cs" />
+    <Compile Include="entidadesConsulta\consulta3.cs" />
+    <Compile Include="entidadesConsulta\consulta4.cs" />
+    <Compile Include="entidadesConsulta\consulta5.cs" />
+    <Compile Include="entidadesConsulta\consulta6.cs" />
+    <Compile Include="entidadesConsulta\consulta7.cs" />
+    <Compile Include="entidadesConsulta\consulta8.cs" />
+    <Compile Include="entidadesConsulta\consulta9.cs" />
+    <Compile Include="Entidades\articuloSuper.cs" />
+    <Compile Include="Entidades\caja.cs" />
+    <Compile Include="Entidades\cajero.cs" />
+    <Compile Include="Entidades\departameto.cs" />
+    <Compile Include="Entidades\estanteria.cs" />
+    <Compile Include="Entidades\factura.cs" />
+    <Compile Include="Entidades\gerente.cs" />
+    <Compile Include="Entidades\Inventario.cs" />
+    <Compile Include="Entidades\marca.cs" />
+    <Compile Include="Entidades\pasillo.cs" />
+    <Compile Include="Entidades\pedido.cs" />
+    <Compile Include="Entidades\proveedor.cs" />
+    <Compile Include="Entidades\sucursal.cs" />
+    <Compile Include="modelosConsultas\modeloAgregarPedido.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta1.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta10.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta2.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta3.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta4.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta5.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta6.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta7.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta8.cs" />
+    <Compile Include="modelosConsultas\modeloConsulta9.cs" />
+    <Compile Include="Modelo\modeloArticuloSuper.cs" />
+    <Compile Include="Modelo\modeloCaja.cs" />
+    <Compile Include="Modelo\modeloCajero.cs" />
+    <Compile Include="Modelo\modeloDepartamento.cs" />
+    <Compile Include="Modelo\modeloEstanteria.cs" />
+    <Compile Include="Modelo\modeloFactura.cs" />
+    <Compile Include="Modelo\modeloGerente.cs" />
+    <Compile Include="Modelo\modeloInventario.cs" />
+    <Compile Include="Modelo\modeloMarca.cs" />
+    <Compile Include="Modelo\modeloPasillo.cs" />
+    <Compile Include="Modelo\modeloPedido.cs" />
+    <Compile Include="Modelo\modeloProveedor.cs" />
+    <Compile Include="Modelo\modeloSucursal.cs" />
+    <Compile Include="Vista\agregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\agregarCliente.Designer.cs">
+      <DependentUpon>agregarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controlador\ControladorCliente.cs" />
+    <Compile Include="controlador\controladorClienteSuper.cs" />
+    <Compile Include="controlador\ControladorPersona.cs" />
+    <Compile Include="controlador\ControladorVehiculo.cs" />
+    <Compile Include="Entidades\Articulo.cs" />
+    <Compile Include="Entidades\cliente.cs" />
+    <Compile Include="Entidades\persona.cs" />
+    <Compile Include="Entidades\vehiculo.cs" />
+    <Compile Include="Vista\consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\consultas.Designer.cs">
+      <DependentUpon>consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\hacerPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\hacerPedido.Designer.cs">
+      <DependentUpon>hacerPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaaEstanteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaaEstanteria.Designer.cs">
+      <DependentUpon>vistaaEstanteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ModeloCliente.cs" />
+    <Compile Include="Modelo\modeloClienteSuper.cs" />
+    <Compile Include="Modelo\modeloPersona.cs" />
+    <Compile Include="Modelo\modeloVehiculo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\usarTablas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\usarTablas.Designer.cs">
+      <DependentUpon>usarTablas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaArticuloSuper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaArticuloSuper.Designer.cs">
+      <DependentUpon>vistaArticuloSuper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaCaja.Designer.cs">
+      <DependentUpon>vistaCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaCajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaCajero.Designer.cs">
+      <DependentUpon>vistaCajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaDepartamento.Designer.cs">
+      <DependentUpon>vistaDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaFactura.Designer.cs">
+      <DependentUpon>vistaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaGerente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaGerente.Designer.cs">
+      <DependentUpon>vistaGerente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaInventario.Designer.cs">
+      <DependentUpon>vistaInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaMarca.Designer.cs">
+      <DependentUpon>vistaMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaPasillo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaPasillo.Designer.cs">
+      <DependentUpon>vistaPasillo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaPedido.Designer.cs">
+      <DependentUpon>vistaPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaProveedor.Designer.cs">
+      <DependentUpon>vistaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaSucursal.Designer.cs">
+      <DependentUpon>vistaSucursal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\agregarCliente.resx">
+      <DependentUpon>agregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\consultas.resx">
+      <DependentUpon>consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\hacerPedido.resx">
+      <DependentUpon>hacerPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaaEstanteria.resx">
+      <DependentUpon>vistaaEstanteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\usarTablas.resx">
+      <DependentUpon>usarTablas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaArticuloSuper.resx">
+      <DependentUpon>vistaArticuloSuper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaCaja.resx">
+      <DependentUpon>vistaCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaCajero.resx">
+      <DependentUpon>vistaCajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaDepartamento.resx">
+      <DependentUpon>vistaDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaFactura.resx">
+      <DependentUpon>vistaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaGerente.resx">
+      <DependentUpon>vistaGerente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaInventario.resx">
+      <DependentUpon>vistaInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaMarca.resx">
+      <DependentUpon>vistaMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaPasillo.resx">
+      <DependentUpon>vistaPasillo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaPedido.resx">
+      <DependentUpon>vistaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaProveedor.resx">
+      <DependentUpon>vistaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaSucursal.resx">
+      <DependentUpon>vistaSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
